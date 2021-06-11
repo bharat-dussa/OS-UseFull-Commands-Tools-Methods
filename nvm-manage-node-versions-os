@@ -1,0 +1,44 @@
+#NVM  
+for install: 
+
+   $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+ The script will clone the nvm repository to ~/.nvm directory and adds the following source line to your profile: (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
+   $ export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+ 
+ To verify that nvm has been installed, do:
+
+    $ source ~/.bashrc 
+    $ command -v nvm
+    
+ How to use nvm to manage Node.js versions
+ Check available versions of Node.js
+ 
+ $ nvm ls-remote
+ 
+ Install Latest version of Node.js
+ $ nvm install node
+    or
+ Install Specific version of Node.js
+ $ nvm install v11.14.0
+ 
+ Install Node.js LTS version
+ $ nvm install --lts
+ 
+ List installed Node.js versions
+ $ nvm ls
+
+Use Latest Node.js
+$ nvm use node
+
+Use a specific version of node:
+$ nvm use v11.14.0
+
+Migrating global packages while installing:
+If you want to install a new version of Node.js and migrate npm packages from a previous version:
+$ nvm install node --reinstall-packages-from=node
+
+To use the system version of node, add system at the end of use.
+$ nvm use system
+$ nvm run system --version
