@@ -1,3 +1,3 @@
 #BIOS PASSWORD RECOVERY
 
-[Title](https://bios-pw.org/)
+[Bios Password Link](https://bios-pw.org/)
